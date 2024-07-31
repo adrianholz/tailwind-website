@@ -16,89 +16,120 @@
   </head>
 
   <body>
-    <header>
-      <nav class="flex items-center justify-between">
+    <header class="relative container mx-auto">
+      <nav
+        class="absolute flex items-center justify-between w-full my-8 px-6 text-white"
+      >
         <div class="flex items-center">
-          <a href="#">Brand Name</a>
+          <a href="#" class="mr-20 text-2xl font-bold">Brand Name</a>
 
-          <div>
-            <button><img src=" ./assets/svg/search.svg" /></button>
-            <button><img src="./assets/svg/shopping.svg" /></button>
-          </div>
-
-          <label><input type="checkbox" /></label>
-
-          <div>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Product</a></li>
-              <li><a href="#">Pricing</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
+          <ul class="flex items-center gap-x-5 font-semibold">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
         </div>
 
-        <div>
+        <div class="flex items-center gap-10 font-semibold">
           <a href="#">Login</a>
-          <button>Become a member →</button>
+          <button
+            style="background: #23a6f0; border-radius: 5px"
+            class="flex items-center gap-3 px-9 py-4 text-white font-semibold block text-center"
+          >
+            Become a member <span>→</span>
+          </button>
         </div>
       </nav>
     </header>
 
-    <div class="hero">
-      <div>
-        <h1>We Ensure A Best Insurance Service</h1>
-        <h4>
-          We know how large objects will act, but things on a small scale.
-        </h4>
-        <div>
-          <button>Get Quote Now</button>
-          <button>Learn More</button>
+    <div
+      class="py-30 text-white"
+      style="
+        background-image: linear-gradient(to right, #000, transparent),
+          url('./assets/jpg/hero.jpg');
+        padding: 216px 0 112px;
+      "
+    >
+      <div class="container mx-auto my-8 px-6">
+        <div style="max-width: 599px">
+          <h1 class="mb-9 text-6xl font-bold">
+            We Ensure A Best Insurance Service
+          </h1>
+          <h4 class="mb-9 text-xl" style="width: 372px">
+            We know how large objects will act, but things on a small scale.
+          </h4>
+          <div class="flex items-center gap-3">
+            <button
+              style="background: #23a6f0; border-radius: 40px"
+              class="px-9 py-4 text-white font-semibold block text-center"
+            >
+              Get Quote Now
+            </button>
+            <button
+              style="border-radius: 40px"
+              class="px-9 py-4 border-solid border-2 text-white font-semibold block text-center"
+            >
+              Learn More
+            </button>
+          </div>
         </div>
       </div>
     </div>
 
-    <div>
-      <div>
-        <img src="./assets/svg/wallet.svg" />
-        <h5>Peace of Mind</h5>
-        <p>So it really behaves like neither. Now we have given up.</p>
-      </div>
-      <div>
-        <img src="./assets/svg/save.svg" />
-        <h5>Set For Life</h5>
-        <p>They were used to create the machines that launched</p>
-      </div>
-      <div>
-        <img src="./assets/svg/people.svg" />
-        <h5>100% Satisfaction</h5>
-        <p>So it really behaves like neither. Now we have given up.</p>
+    <div style="background-color: #252b42">
+      <div class="flex items-center gap-8 container mx-auto py-24 text-white">
+        <div class="flex flex-col items-center justify-center py-10 px-6">
+          <img class="mb-8" src="./assets/svg/wallet.svg" />
+          <h5 class="mb-3">Peace of Mind</h5>
+          <p class="text-center">
+            So it really behaves like neither. Now we have given up.
+          </p>
+        </div>
+        <div class="flex flex-col items-center justify-center py-10 px-6">
+          <img class="mb-8" src="./assets/svg/save.svg" />
+          <h5 class="mb-3">Set For Life</h5>
+          <p class="text-center">
+            They were used to create the machines that launched
+          </p>
+        </div>
+        <div class="flex flex-col items-center justify-center py-10 px-6">
+          <img class="mb-8" src="./assets/svg/people.svg" />
+          <h5 class="mb-3">100% Satisfaction</h5>
+          <p class="text-center">
+            So it really behaves like neither. Now we have given up.
+          </p>
+        </div>
       </div>
     </div>
 
-    <div>
-      <div>
-        <div>
-          <h2>What Clients Say</h2>
-          <p>
+    <div style="background-color: #8ec2f2">
+      <div class="container mx-auto py-24 text-white">
+        <div class="flex flex-col items-center mb-32">
+          <h2 class="text-4xl font-semibold mb-6">What Clients Say</h2>
+          <p class="text-center" style="max-width: 607px">
             Problems trying to resolve the conflict between the two major realms
             of Classical physics: Newtonian mechanics
           </p>
         </div>
-        <div>
-          <div>
-            <img src="./assets/png/user-1.png" />
+        <div class="flex items-center gap-8 text-black">
+          <div class="relative bg-white ml-12 py-8 px-10">
+            <img
+              class="absolute"
+              src="./assets/png/user-1.png"
+              style="top: 20px; left: -50px"
+            />
             <div>
-              <h3>Regina Miles</h3>
-              <h6>Designer</h6>
-              <div>
+              <h3 class="text-2xl font-bold">Regina Miles</h3>
+              <h6 class="mt-1 text-sm" style="color: #737373">Designer</h6>
+              <div class="flex items-center gap-2 my-4">
                 <img src="./assets/svg/star.svg" />
                 <img src="./assets/svg/star.svg" />
                 <img src="./assets/svg/star.svg" />
                 <img src="./assets/svg/star.svg" />
                 <img src="./assets/svg/star-outline.svg" />
               </div>
-              <p>
+              <p style="color: #737373">
                 This proved to be impossible using the traditional concepts of
                 space and time. Einstein developed a new view of time first and
                 then space. This proved to be impossible using the traditional
@@ -107,19 +138,23 @@
               </p>
             </div>
           </div>
-          <div>
-            <img />
+          <div class="relative bg-white ml-12 py-8 px-10">
+            <img
+              class="absolute"
+              src="./assets/png/user-2.png"
+              style="top: 20px; left: -50px"
+            />
             <div>
-              <h3>Regina Miles</h3>
-              <h6>Designer</h6>
-              <div>
+              <h3 class="text-2xl font-bold">Regina Miles</h3>
+              <h6 class="mt-1 text-sm" style="color: #737373">Designer</h6>
+              <div class="flex items-center gap-2 my-4">
                 <img src="./assets/svg/star.svg" />
                 <img src="./assets/svg/star.svg" />
                 <img src="./assets/svg/star.svg" />
                 <img src="./assets/svg/star.svg" />
                 <img src="./assets/svg/star-outline.svg" />
               </div>
-              <p>
+              <p style="color: #737373">
                 This proved to be impossible using the traditional concepts of
                 space and time. Einstein developed a new view of time first and
                 then space. This proved to be impossible using the traditional
